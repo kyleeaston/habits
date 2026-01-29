@@ -1,6 +1,6 @@
 function sendDailyHabitFormEmail() {
-  const EMAIL_TO = 'kaeaston1@yahoo.com';
-  const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdledT5YONlsiLLJ88E7T274wdYEhXt3oKhESHXCrI_E-_X7Q/viewform?usp=header';
+  const EMAIL_TO = '';
+  const FORM_URL = '';
 
   const yesterday = new Date();
   yesterday.setDate(yesterday.getDate() - 1);
@@ -494,10 +494,11 @@ const row4 = renderCardRow([breakfastCard,lunchCard,dinnerCard],3);
 
   MailApp.sendEmail({
     to: EMAIL_TO,
-    cc: 'juliabeaird@yahoo.com',
+    cc: '',
     subject: 'Weekly Habit Report',
     htmlBody: html
   });
 }
+
 
 
